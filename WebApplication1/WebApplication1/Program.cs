@@ -31,7 +31,7 @@ namespace WebApplication1
 
                 try
                 {
-                    var context = services.GetRequiredService<DrugStore.Models.DrugStoreContext>();
+                    var context = services.GetRequiredService<WebApplication1.Models.DatabaseContext>();
                     context.Database.EnsureCreated();
                 }
                 catch (Exception ex)

@@ -20,6 +20,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        //public FileResult GetFile()
+        //{
+        //    return File(Url.Content("~/Content/12.pdf"),"application/pdf");
+        //}
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
